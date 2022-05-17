@@ -310,7 +310,7 @@
         </div>
 
         <!-- Присоединяйтесь -->
-        <div>
+        <div class="join">
           <h3 class="motto">присоединяйтесь</h3>
           <ul class="footernetwork-list list">
             <li class="element">
@@ -343,6 +343,27 @@
             </li>
           </ul>
         </div>
+
+        <!-- Подпишитесь на рассылку -->
+        <form class="subscribe-form" action="">
+          <div class="sibscribe-field">
+            <label for="subscribe" class="label">Подпишитесь на рассылку</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="subscribe"
+              autocomplete="on"
+              placeholder="E-mail"
+            />
+          </div>
+          <button type="submit" class="sibscribe" aria-label="Подписаться">
+            Подписаться
+            <svg class="icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
