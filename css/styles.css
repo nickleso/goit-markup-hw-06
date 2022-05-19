@@ -356,6 +356,7 @@ img {
 .input:hover,
 .input:focus {
   border: 1px solid #2196f3;
+  fill: var(--accent-color);
 }
 
 .modal-icon {
@@ -368,6 +369,10 @@ img {
 .input:hover + .modal-icon,
 .input:focus + .modal-icon {
   fill: var(--accent-color);
+}
+
+.modal-icon {
+  pointer-events: none;
 }
 
 .textarea-field {
