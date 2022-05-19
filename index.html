@@ -73,6 +73,57 @@
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
+            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="modal-form">
+              <div class="form-field">
+                <label for="name" class="label">Имя</label>
+                <input class="input" type="text" name="username" id="name" />
+                <svg class="modal-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-person-modal"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <label for="tel" class="label">Телефон</label>
+                <input class="input" type="tel" name="tel" id="tel" autocomplete="on" />
+                <svg class="modal-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-phone-modal"></use>
+                </svg>
+              </div>
+
+              <div class="form-field">
+                <label for="email" class="label">Почта</label>
+                <input class="input" type="email" name="email" id="email" autocomplete="on" />
+                <svg class="modal-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-email-modal"></use>
+                </svg>
+              </div>
+
+              <div class="textarea-field">
+                <label for="comment" class="label">Комментарий</label>
+                <textarea
+                  class="textarea"
+                  name="comment"
+                  id="comment"
+                  rows="7"
+                  autocomplete="off"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+
+              <label class="policy-label">
+                <input class="policy-input hidden" type="checkbox" name="policy" />
+                <span class="policy-checkbox"></span>
+                <span class="policy-title"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="./index.html" class="agreement-link" aria-label="Условия договора">
+                    Условия договора</a
+                  ></span
+                >
+              </label>
+
+              <button type="submit" class="subscribe" aria-label="Отправить">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -471,11 +522,11 @@
         </div>
 
         <!-- Подпишитесь на рассылку -->
-        <form class="subscribe-form" action="">
-          <div class="sibscribe-field">
-            <label for="subscribe" class="label">Подпишитесь на рассылку</label>
+        <form class="subscribe-form">
+          <div class="subscribe-field">
+            <label for="subscribe" class="footer-label">Подпишитесь на рассылку</label>
             <input
-              class="input"
+              class="footer-input"
               type="email"
               name="email"
               id="subscribe"
@@ -483,7 +534,7 @@
               placeholder="E-mail"
             />
           </div>
-          <button type="submit" class="sibscribe" aria-label="Подписаться">
+          <button type="submit" class="subscribe" aria-label="Подписаться">
             Подписаться
             <svg class="icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-send"></use>

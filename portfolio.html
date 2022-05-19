@@ -345,11 +345,11 @@
         </div>
 
         <!-- Подпишитесь на рассылку -->
-        <form class="subscribe-form" action="">
-          <div class="sibscribe-field">
-            <label for="subscribe" class="label">Подпишитесь на рассылку</label>
+        <form class="subscribe-form js-speaker-form" action="" name="subscribe-form">
+          <div class="subscribe-field">
+            <label for="subscribe" class="footer-label">Подпишитесь на рассылку</label>
             <input
-              class="input"
+              class="footer-input"
               type="email"
               name="email"
               id="subscribe"
@@ -357,7 +357,7 @@
               placeholder="E-mail"
             />
           </div>
-          <button type="submit" class="sibscribe" aria-label="Подписаться">
+          <button type="submit" class="subscribe" aria-label="Подписаться">
             Подписаться
             <svg class="icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-send"></use>
@@ -366,5 +366,8 @@
         </form>
       </div>
     </footer>
+
+    <!-- scripts -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
